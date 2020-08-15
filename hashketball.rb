@@ -199,13 +199,15 @@ end
 
 def big_shoe_rebounds
   max = 0
+  rebound = 0
   game_hash.each do |home_away,team|
     team[:players].each do |stats|
       if stats[:shoe] > max
         max = stats[:shoe]
+        rebound = stats[:rebounds]
       end
     end
   end
-  binding.pry
+  return rebound
 end
 
