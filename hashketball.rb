@@ -211,10 +211,11 @@ def big_shoe_rebounds
   return rebound
 end
 
-def most_pout
+def most_points_scored
+end
 
-
-
+def most_points_scored
+end
 
 
 
