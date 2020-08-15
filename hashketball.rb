@@ -197,5 +197,14 @@ def player_stats(name)
   return newHash
 end
 
-
+def big_shoe_rebounds
+  max = 0
+  game_hash.each do |home_away,team|
+    team[:players].each do |stats|
+      if stats[:player_name] == name
+        newHash = stats
+      end
+    end
+  end
+end
 
